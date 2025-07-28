@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #1A1F36;
+}
+header {
+    background: #1A1F36;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img.logo-img {
+    height: 75px;
+    vertical-align: middle;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.cta-button {
+    background: #D4AF37;
+    color: #1A1F36;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.intro {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #eee;
+}
+.feature {
+    max-width: 200px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1A1F36;
+    color: white;
+}
+/* Chatbot styles */
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #D4AF37;
+    color: #1A1F36;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+#chat-window {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#chat-window.open {
+    display: flex;
+}
+#chat-log {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+#chat-form {
+    display: flex;
+    border-top: 1px solid #eee;
+}
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+#chat-form button {
+    background: #1A1F36;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
